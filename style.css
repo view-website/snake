@@ -1,0 +1,83 @@
+h1 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: #212837;
+    margin-bottom: 5px;
+  }
+body{
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: #E3F2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #212837;
+    border-color: #212837;
+  }
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    background-color: rgb(235, 235, 235);
+    border-radius: 7px;
+    border-width: 8px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.game-details{
+    font-family: "Tiny5", sans-serif;
+    font-size: 25px;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+.play-board{
+    width:100%;
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template: repeat(30, 1fr)/ repeat(30, 1fr);
+}
+.play-board .food{
+    background: rgb(255, 18, 50);
+}
+.play-board .head{
+    background: rgb(18, 255, 97);
+}
+.controls{
+    display: none;
+    justify-content: center;
+}
+.controls i{
+    padding: 25px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100%/ 4);
+    border-right: 1px solid ;
+}
+#right{
+    border-right: 0;
+}
+@media screen and (max-width: 800px){
+    .wrapper{
+        width: 90vmin;
+        height: 115vmin;
+    }
+    .game-details{
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+    .controls {
+        display: flex;
+    }
+    .controls i{
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
